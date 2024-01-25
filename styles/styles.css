@@ -888,6 +888,82 @@ body {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.index-events {
+  margin-top: 217px;
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.index-events__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.index-events__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lora", serif;
+  letter-spacing: 0.44px;
+  margin-bottom: 158px;
+}
+.index-events__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-events__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+}
+.index-events__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-right: 15.26%;
+}
+.index-events__picture {
+  margin-top: -127px;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.index-events__img {
+  justify-self: center;
+}
 .page-footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -980,6 +1056,7 @@ body {
   margin-bottom: 20px;
 }
 .page-footer__other {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -987,36 +1064,58 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-.page-footer__other-cookies {
-  margin-left: 60px;
+.page-footer__other-policy {
+  position: sticky;
+  margin-right: 60px;
+}
+.page-footer__other-promote-icon {
+  position: sticky;
+  margin-left: 15px;
+  margin-bottom: 0;
+  bottom: 0;
+}
+.page-footer__other-creation {
+  position: relative;
+  margin-left: auto;
+}
+.page-footer__other-cookies,
+.page-footer__other-policy,
+.page-footer__other-creation {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.page-footer__other-cookies:active,
+.page-footer__other-policy:active,
+.page-footer__other-creation:active {
+  color: #bc3324;
 }
 .page-footer__other-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 160px;
-  margin-left: 203px;
-}
-.page-footer__other-promote {
   position: absolute;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 296px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 0;
+  left: 0;
+  gap: 0 44px;
+  margin-top: 60px;
 }
 .subscribe {
   min-width: 410px;
@@ -1795,6 +1894,11 @@ body {
     color: #bc3324;
   }
   .page-footer__nav-link:hover {
+    color: #bc3324;
+  }
+  .page-footer__other-cookies:hover,
+  .page-footer__other-policy:hover,
+  .page-footer__other-creation:hover {
     color: #bc3324;
   }
   .subscribe__submit:hover {
