@@ -379,7 +379,7 @@ button {
 .events__arrow {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 128px;
+  width: 100%;
   height: 132px;
   margin-left: auto;
   margin-right: auto;
@@ -628,9 +628,6 @@ button {
 }
 .link:active {
   color: #bc3324;
-}
-.link__icon {
-  margin-left: 20px;
 }
 .offers {
   margin-bottom: 200px;
